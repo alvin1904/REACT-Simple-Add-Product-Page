@@ -56,8 +56,16 @@ button,
 textarea,
 select {
   font: inherit;
+  border: none;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(100, 100, 111, 0.2);
 }
-
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
