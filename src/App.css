@@ -1,34 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap");
 
-:root{
-    font-family: 'Cormorant', serif;
-    font-size: 1.35rem;
+:root {
+  font-family: "Cormorant", serif;
+  font-size: 1.35rem;
 }
-body{
-    background-image: url('./assets/bg.svg');
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
-.heading{
-    font-size:2rem;
+body {
+  background-image: url("./assets/bg.svg");
+  /* background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
 }
-.form{
-    background-color: white;
-    padding: 5vw;
-    margin: 2.5vw;
-    border-radius: 0.25rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 90vw;
-    min-height: 90vw;
+.heading {
+  font-size: 2rem;
 }
-.form-section div{
-    margin-top: 2rem;
+.App {
+  justify-content: center;
+  align-content: center;
 }
-.section textarea{
-    resize: none;
-    height: 7rem;
+.form {
+  background-color: white;
+  padding: 5vw;
+  margin: 2.5vw;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 90vw;
+  min-height: 90vw;
 }
-.section input, .section textarea{
-    min-width: 50vw;
+.form-section div {
+  margin-top: 2rem;
+}
+.section p {
+  font-weight: 600;
+}
+.section textarea {
+  resize: none;
+  height: 7rem;
+}
+.section input,
+.section textarea {
+  min-width: 50vw;
+}
+.section input:focus::placeholder,
+.section textarea:focus::placeholder {
+  color: transparent;
+  transition: 0.1s;
+}
+
+.image-uploader{
+  outline: none;
+  margin-top: .5rem;
+
+}
+
+/* UTILITY CLASSES */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.flex-row input {
+  min-width: 25vw;
 }
