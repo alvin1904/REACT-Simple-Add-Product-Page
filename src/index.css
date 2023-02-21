@@ -54,7 +54,7 @@ picture {
 input,
 button,
 textarea,
-select {
+select{
   font: inherit;
   border: none;
   box-sizing: border-box;
